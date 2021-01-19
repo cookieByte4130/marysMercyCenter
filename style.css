@@ -1,0 +1,387 @@
+/*
+COLORS:
+blue: #c4dae5;
+brown: #5c472c;
+*/
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-family: sans-serif;
+  color: #222;
+}
+
+.padding {
+  padding-bottom: 2rem;
+}
+
+section {
+  padding: 15px 0;
+}
+
+/*==================
+ BUTTONS 
+ ==================*/
+ .btn-primary {
+  background-color: #5c472c;
+  border: 1px solid #5c472c;
+}
+
+.btn-primary:hover {
+  background-color: #c4dae5;
+  border: 1px solid #c4dae5;
+}
+
+/*==================
+ NAV BAR 
+ ==================*/
+.navbar {
+  padding: .8rem;
+  background-color: #c4dae5 !important;
+}
+
+.navbar-nav li {
+  padding-right: 20px;
+}
+
+.nav-link {
+  font-size: 1.1em !important;
+}
+/*==================
+ INTRO 
+ ==================*/
+.intro {
+  position: relative;
+  width: 100%;
+  height: 90%;
+  background-image: linear-gradient(#c4dae591, #c4dae594), url('img/background.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.intro-caption {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  width: 75%;
+  color: #f2f5f7;
+  text-align: center;
+}
+
+.intro-caption h1 {
+  font-size: 500%;
+  text-transform: uppercase;
+  text-shadow: 2px 3px 9px #0000009e;
+}
+
+.intro-caption h3 {
+  font-size: 200%;
+  font-weight: 500;
+  text-shadow: 2px 3px 5px #0000009e;
+  padding-bottom: 1rem;
+}
+
+/*==================
+ DONATION 
+ ==================*/
+.donation {
+  padding-top: 50px;
+}
+
+.donationSelection {
+  color: #5c472c;
+  margin-top: 10px;
+  border-radius: 10px;
+  padding: 11px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.donationSelection h4 {
+  text-align: center;
+}
+
+.donationSelection button {
+  width: 15%;
+}
+
+.mmcDonation {
+  background-image: linear-gradient(#c4dae5d1 , #c4dae5fc), url(img/background.png);
+}
+
+.vhmDonation {
+  background-image: linear-gradient(#c4dae5d1 , #c4dae5fc), url(img/veronicasHomeOfMercyI.png);
+}
+
+.mtDonation {
+  background-image: linear-gradient(#c4dae5d1 , #c4dae5fc), url(img/mmcTable.png);
+}
+
+.mvDonation {
+  background-image: linear-gradient(#c4dae5d1 , #c4dae5fc), url(img/marysVillage.png);
+}
+
+.shoppingCart {
+  display: block;
+  margin: 20px auto;
+}
+
+.deduction {
+  margin: 20px 0;
+  color: #5c472c;
+  text-align: center;
+}
+
+/*==================
+ JUMBOTRON 
+ ==================*/
+.jumbotron {
+  padding: 1rem;
+  border-radius: 0;
+  background-color: #c4dae5;
+}
+
+.welcome {
+  width: 75%;
+  margin: 0 auto;
+  padding-top: 2rem;
+}
+
+.welcome hr{
+  border-top: 2px solid #b4b4b4;
+  width: 90%;
+  margin-top: .3rem;
+  margin-bottom: 1rem;
+}
+
+.col-lg-6 img,
+.col-md-6 img {
+  border: 35px solid #5c472c;
+  font-weight: 200;
+}
+
+/*==================
+ PROGRAMS AND SERVICES 
+ ==================*/
+ .cardHolder {
+   max-width: 800px;
+ }
+.card{
+  margin-bottom: 15px;
+}
+
+.card-header {
+  background-color: #c4dae5;
+  padding: 0;
+  overflow: hidden;
+}
+
+#programsAccordion a{
+  color: #0000009e;
+  width: 100%;
+  margin: 0;
+}
+
+#programsAccordion a:hover {
+  text-decoration: none;
+  color: #000;
+}
+
+#programsAccordion .icon{
+  color: #c4dae5;
+  background-color: #5c472c;
+  text-align: center;
+  font-size: 2rem;
+}
+
+.card-body {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+#marysTable .card-body {
+  background-image: linear-gradient(#f4f9fbd9, #f4f9fbb8), url('img/mmcTable.png');
+}
+
+#foodBag .card-body {
+  background-image: linear-gradient(#f4f9fbd9, #f4f9fbb8), url('img/foodBagProgram.png');
+}
+
+#showers .card-body {
+  background-image: linear-gradient(#f4f9fbd9, #f4f9fbb8), url('img/shower.png');
+}
+
+#medicalScreening .card-body {
+  background-image: linear-gradient(#f4f9fbd9, #f4f9fbb8), url('img/medical1.png');
+}
+
+#dentalClinic .card-body {
+  background-image: linear-gradient(#f4f9fbd9, #f4f9fbb8), url('img/medical2.png');
+}
+
+#clothesCloset .card-body {
+  background-image: linear-gradient(#f4f9fbd9, #f4f9fbb8), url('img/closet.png');
+}
+
+#childrensProg .card-body {
+  background-image: linear-gradient(#f4f9fbd9, #f4f9fbb8), url('img/children.png');
+}
+
+#christmasParty .card-body {
+  background-image: linear-gradient(#f4f9fbd9, #f4f9fbb8), url('img/christmas.png');
+}
+
+#vhm .card-body {
+  background-image: linear-gradient(#f4f9fbd9, #f4f9fbb8), url('img/veronicasHomeOfMercyI.png');
+}
+
+#cm .card-body {
+  background-image: linear-gradient(#f4f9fbd9, #f4f9fbb8), url('img/veronica2.png');
+}
+
+#mv .card-body {
+  background-image: linear-gradient(#f4f9fbd9, #f4f9fbb8), url('img/marysVillage.png');
+}
+
+/*==================
+ BOARD OF DIRECTORS 
+ ==================*/
+ #boardOfDirectors {
+   background-color:  #c4dae5;
+ }
+
+ #boardOfDirectors li {
+   list-style: none;
+ }
+
+/*==================
+ CONTACT 
+ ==================*/
+.social a {
+  font-size: 4.5em;
+  padding: 3rem;
+  color: #5c472c;
+}
+
+.social a:hover {
+  color: #c4dae5
+}
+
+/*==================
+ FOOTER 
+ ==================*/
+footer{
+  background-color: #5c472c;
+  color: #d5d5d5;
+  padding-top: 2rem;
+}
+
+hr.light {
+  border-top: 1px solid #d5d5d5;
+  width: 75%;
+  margin-top: .8rem;
+  margin-bottom: 1rem;
+}
+
+footer a {
+  color: #d5d5d5;
+}
+
+hr.light-100 {
+  border-top: 1px solid #d5d5d5;
+  width: 100%;
+  margin-top: .8rem;
+  margin-bottom: 1rem;
+
+}
+
+/*---Media Queries --*/
+@media (max-width: 992px) {
+  .social a{
+    font-size: 4em;
+    padding: 2rem;
+  }
+}
+@media (max-width: 768px) {
+  .intro-caption {
+    top: 45%;
+  }
+  .intro-caption h1 {
+    font-size: 350%;
+  }
+  .intro-caption h3 {
+    font-size: 140%;
+    font-weight: 400;
+    padding-bottom: .2rem;
+  }
+  .intro-caption .btn {
+    font-size: 95%;
+    padding: 8px 14px;
+  }
+  .display-4 {
+    font-size: 200%;
+  }
+  .social a{
+    font-size: 2.5em;
+    padding: 1.2rem;
+  }
+}
+@media (max-width: 576px) {
+  .intro-caption {
+    top: 40%;
+  }
+  .intro-caption h1 {
+    font-size: 250%;
+  }
+  .intro-caption h3 {
+    font-size: 110%;
+  }
+  .intro-caption .btn {
+    font-size: 90%;
+    padding: 4px 8px;
+  }
+  .display-4 {
+    font-size: 160%;
+  }
+  .social a{
+    font-size: 2em;
+    padding: .7rem;
+  }
+}
+
+/*--- Bootstrap Padding Fix --*/
+[class*="col-"] {
+    padding: 1rem;
+}
+
+
+
+
+
+/*
+Extra small (xs) devices (portrait phones, less than 576px)
+No media query since this is the default in Bootstrap
+
+Small (sm) devices (landscape phones, 576px and up)
+@media (min-width: 576px) { ... }
+
+Medium (md) devices (tablets, 768px and up)
+@media (min-width: 768px) { ... }
+
+Large (lg) devices (desktops, 992px and up)
+@media (min-width: 992px) { ... }
+
+Extra (xl) large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }
+*/
+
+
+
+
+
+
+
+

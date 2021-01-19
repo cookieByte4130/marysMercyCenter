@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Mary's Mercy Center</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+	<script src="https://kit.fontawesome.com/39c260c1c1.js" crossorigin="anonymous"></script>
+	<link href="style.css" rel="stylesheet">
+</head>
+<body>
+
+	<!-- Navigation -->
+	<nav class="navbar navbar-expand-md navbar-light bg-light fixed-top">
+		<div class="container-fluid">
+			<a class="navbar-brand" href="#">Mary's Mercy Center</a>
+			<button class="navbar-toggler" type='button' data-toggle="collapse" data-target='#navbarResponsive'>
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarResponsive">
+				<ul class="navbar-nav ml-auto">
+					<li class="nav-item">
+						<a class="nav-link active">Home</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#about">About</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#services">Services</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#funding">Funding</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#boardOfDirectors">Board of Directors</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#connect">Connect</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+	<!--Intro Section-->
+	<section class="intro">
+		<div class="intro-caption">
+			<h1 class="display-2">Mary's Mercy Center</h1>
+			<h3>We are a non-profit public benefit corporation and organized exclusively for charitable, religious and educational purposes</h3>
+			<button type='button' class="btn btn-primary btn-lg" data-toggle="collapse" data-target="#donation">Donate Now</button>
+		</div>
+	</section>
+
+	<!--Donation form-->
+	<section class="container-fluid padding donation" id="donation">
+		<h1 class="display-3 text-center">Become a Donor</h1>
+		<p class="text-center">It’s the easiest way to give and ensure that  Mary's Mercy Center, Veronica's Home of Mercy, or Mary's Table, receives your ongoing support</p>
+		<form class="container">
+			<div class="donationSelection mmcDonation">
+				<h4>Mary's Mercy Center</h4>
+				<div class="d-flex justify-content-between">
+					<button class="btn btn-outline-secondary">$50</button>
+					<button class="btn btn-outline-secondary">$100</button>
+					<button class="btn btn-outline-secondary">$250</button>
+					<button class="btn btn-outline-secondary">$500</button>
+					<button class="btn btn-outline-secondary">$1000</button>
+				</div>
+			</div>
+			<div class="donationSelection vhmDonation">
+				<h4>Veronica's Home of Mercy</h4>
+				<div class="d-flex justify-content-between">
+					<button class="btn btn-outline-secondary">$50</button>
+					<button class="btn btn-outline-secondary">$100</button>
+					<button class="btn btn-outline-secondary">$250</button>
+					<button class="btn btn-outline-secondary">$500</button>
+					<button class="btn btn-outline-secondary">$1000</button>
+				</div>
+			</div>
+			<div class="donationSelection mtDonation">
+				<h4>Mary's Table</h4>
+				<div class="d-flex justify-content-between">
+					<button class="btn btn-outline-secondary">$50</button>
+					<button class="btn btn-outline-secondary">$100</button>
+					<button class="btn btn-outline-secondary">$250</button>
+					<button class="btn btn-outline-secondary">$500</button>
+					<button class="btn btn-outline-secondary">$1000</button>
+				</div>
+			</div>
+			<div class="donationSelection mvDonation">
+				<h4>Mary's Village</h4>
+				<div class="d-flex justify-content-between">
+					<button class="btn btn-outline-secondary">$50</button>
+					<button class="btn btn-outline-secondary">$100</button>
+					<button class="btn btn-outline-secondary">$250</button>
+					<button class="btn btn-outline-secondary">$500</button>
+					<button class="btn btn-outline-secondary">$1000</button>
+				</div>
+			</div>
+			<button class="btn btn-lg btn-primary shoppingCart">View Shopping Cart</button>
+			<p class="deduction">All donations are tax deductible.<br>
+				Mary's Mercy Center, Inc. Tax ID 33-0632426</p>
+		</form>
+	</section>
+
+	<!--- Jumbotron -->
+	<section class="container-fluid" id="about">
+		<div class="row jumbotron">
+			<div class='col-xs-12 col-sm-12 col-md-9 col-lg-9 col-xl-10'>
+				<p class="lead">Mary's Mercy Center, Inc. is a public non-profit organization which is committed to serve all races, creeds and conditions of life, and extending unconditional love, acceptance, and respect to all who come for assistance. Networking with Local agencies has empowered Mary's Mercy Center to reach out to the poor and powerless of society and help people grow into useful, affirmed people in today's world. Restoring dignity to the poor and marginalized, we serve the young, the old and the mentally and physically challenged.</p>
+				<!--see more toggle-->
+				<button class="btn btn-outline-secondary btn-lg" data-toggle="collapse" data-target="#ourStory">Our Story</button>
+				<p class="collapse lead" id="ourStory">
+					Our journey began in the mid 1980’s with a divinely inspired vision shared by members of the Catholic charismatic Renewal Center, under the direction of Fr. Michael Barry. Challenged by the example and teachings of Jesus, we began to reach out and serve the poor in our local communities, working first in local parks with supplies of food and money to cover utility bills.
+					<br>
+					From these early outreach efforts, we moved to open a soup kitchen at Our Lady of Fatima Church in San Bernardino. Soon, the Lutheran Church of Our Savior added their hands and hearts; and then, Our Lady of Guadalupe Church followed with a larger kitchen and dining facility at their location. By 1990, Mary’s Table, as the soup kitchen had come to be known, had expanded to five days a week and was serving over 5,000 hot meals each month. It had become a haven, a place of rest, fellowship and renewal for many. In 1996, a free medical screening was added to Mary’s Mercy Center, which had already expanded to include a clothes closet, an emergency food bag program and other services.
+					<br>
+					Even before this, in 1989, fundraising had begun with the help of the 300 Club for a major expansion that would become Mary’s Mercy Center. In 1992, we purchased our present building and became incorporated as a non-profit public benefit corporation, organized exclusively for charitable, religious and education purposes. In 1993, the Sisters of Charity of the Incarnate Word provided a substantial grant for the purchase of an old convent that would be transformed into Veronica’s Home of Mercy. Veronica’s Home of Mercy was opened in 1995. Before that Casa Merced (a HUD House) opened its doors in 1994. Then in 2009 Veronica’s Home II opened its doors.
+					<br>
+					Mary’s Mercy Center currently welcomes approximately 300 volunteers of various faiths, schools, and community organizations from throughout Southern California. We are proud to network with city agencies, county agencies, and other non-profits to direct our clients to additional resources. The goal is to restore dignity and purpose to the homeless, the poor and the marginalized. Homelessness and poverty are complicated issues and the solutions are as varied as the individuals we serve. Together we are making a difference in the lives of many.</p>
+			</div>
+		</div>
+	</section>
+
+	<!--- Programs and Services -->
+	<section class="container-fluid padding" id="services">
+		<div class="accordion" id="programsAccordion" role="tablist"
+		aria-multiselectable="true">
+
+			<h1 class="display-3 text-center my-4">Programs and Services</h1>
+			<div class="cardHolder container">
+				<div class="card">
+					<div class="card-header" role="tab" id="heading4">
+						<a  class="row" data-toggle="collapse" data-parent="#programsAccordion" href="#marysTable" aria-expanded="false"
+							aria-controls="collapse4">
+							<i class="fas fa-hand-holding-heart col-2 icon"></i>
+							<h3 class="col mb-0 mt-3">
+								Mary's Table
+							</h3>
+							<i class="col-2 text-right fas fa-angle-down rotate-icon fa-2x"></i>
+						</a>
+					</div>
+					<div id="marysTable" class="collapse" role="tabpanel" aria-labelledby="heading4"
+					data-parent="#programsAccordion">
+						<div class="card-body">
+							<p>Mary's table provides a hot nutritious meal six days a week, including all holidays except Christmas Day. Meals are served to all who come regardless of their situation and no identification is required. After our guests are seated, volunteers serve them their coffee, ice tea, and/or milk. There are no limits on the number of servings for each guest. They are allowed to eat as often as they wish or need to eat.Over 8,000 meals are served each month. Our food comes from many different sources: almost all of our meat is donated; some food and all staples are purchased from food banks, stores and large corporations. We share food among our fellow non-profits when there is an over abundance.</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="card">
+					<div class="card-header" role="tab" id="heading4">
+						<a  class="row" data-toggle="collapse" data-parent="#programsAccordion" href="#foodBag" aria-expanded="false"
+						aria-controls="collapse4">
+							<i class="fas fa-bread-slice col-2 icon"></i>
+							<h3 class="col mb-0 mt-3">
+								Saint Martin de Porres<br>
+								Emergency Food Bag Program
+							</h3>
+							<i class="col-2 text-right fas fa-angle-down rotate-icon fa-2x"></i>
+						</a>
+					</div>
+					<div id="foodBag" class="collapse" role="tabpanel" aria-labelledby="heading4"
+					data-parent="#programsAccordion">
+						<div class="card-body">
+							<p>St. Martin de Porres Emergency Food Bag Program distributes food bags every Wednesday, except the first Wednesday of the Month. Approximately 1,200 families are helped each month. For those with a facility to cook the bags contain beans, rice, tomato sauce, bread, cereal, fruit, etc. For the homeless and unable to cook the bags contain canned foods, cups of soup, energy bars, peanut butter and jelly, fruit, bread and bottled water. No identification is required to receive assistance.</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="card">
+					<div class="card-header" role="tab" id="heading4">
+						<a  class="row" data-toggle="collapse" data-parent="#programsAccordion" href="#showers" aria-expanded="false"
+						aria-controls="collapse4">
+							<i class="fas fa-bath col-2 icon"></i>
+							<h3 class="col mb-0 mt-3">
+								Showers
+							</h3>
+							<i class="col-2 text-right fas fa-angle-down rotate-icon fa-2x"></i>
+						</a>
+					</div>
+					<div id="showers" class="collapse" role="tabpanel" aria-labelledby="heading4"
+					data-parent="#programsAccordion">
+						<div class="card-body">
+							<p>Showers are available for women on Mondays and Wednesdays from 8 am to 10:30 am and for men on Tuesdays and Thursdays from 7:30 am to 10:30 am. Prior to their shower each person is given clean clothing and a hygiene packet.</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="card">
+					<div class="card-header" role="tab" id="heading4">
+						<a  class="row" data-toggle="collapse" data-parent="#programsAccordion" href="#medicalScreening" aria-expanded="false"
+						aria-controls="collapse4">
+							<i class="fas fa-heartbeat col-2 icon"></i>
+							<h3 class="col mb-0 mt-3">
+								Medical Screening
+							</h3>
+							<i class="col-2 text-right fas fa-angle-down rotate-icon fa-2x"></i>
+						</a>
+					</div>
+					<div id="medicalScreening" class="collapse" role="tabpanel" aria-labelledby="heading4"
+					data-parent="#programsAccordion">
+						<div class="card-body">
+							<p>is open at the Center on Wednesday mornings</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="card">
+					<div class="card-header" role="tab" id="heading4">
+						<a  class="row" data-toggle="collapse" data-parent="#programsAccordion" href="#dentalClinic" aria-expanded="false"
+						aria-controls="collapse4">
+							<i class="fas fa-tooth col-2 icon"></i>
+							<h3 class="col mb-0 mt-3">
+								Free Dental Clinic
+							</h3>
+							<i class="col-2 text-right fas fa-angle-down rotate-icon fa-2x"></i>
+						</a>
+					</div>
+					<div id="dentalClinic" class="collapse" role="tabpanel" aria-labelledby="heading4"
+					data-parent="#programsAccordion">
+						<div class="card-body">
+							<p>each quarter</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="card">
+					<div class="card-header" role="tab" id="heading4">
+						<a  class="row" data-toggle="collapse" data-parent="#programsAccordion" href="#clothesCloset" aria-expanded="false"
+						aria-controls="collapse4">
+							<i class="fas fa-tshirt col-2 icon"></i>
+							<h3 class="col mb-0 mt-3">
+								Saint Joseph’s Clothes Closet
+							</h3>
+							<i class="col-2 text-right fas fa-angle-down rotate-icon fa-2x"></i>
+						</a>
+					</div>
+					<div id="clothesCloset" class="collapse" role="tabpanel" aria-labelledby="heading4"
+					data-parent="#programsAccordion">
+						<div class="card-body">
+							<p>St. Joseph's Clothes Closet distributes free clothing. Clothing is distributed to women and children on Mondays from 9am to 11am. We usually have a good supply of women's clothing but there is a great need for men's, children's and infant's clothing.</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="card">
+					<div class="card-header" role="tab" id="heading4">
+						<a  class="row" data-toggle="collapse" data-parent="#programsAccordion" href="#childrensProg" aria-expanded="false"
+						aria-controls="collapse4">
+							<i class="fas fa-child col-2 icon"></i>
+							<h3 class="col mb-0 mt-3">
+								Mary’s Children’s Program
+							</h3>
+							<i class="col-2 text-right fas fa-angle-down rotate-icon fa-2x"></i>
+						</a>
+					</div>
+					<div id="childrensProg" class="collapse" role="tabpanel" aria-labelledby="heading4"
+					data-parent="#programsAccordion">
+						<div class="card-body">
+							<p>Mary's Children Program is an outreach established to help mother/guardians in crisis with infant needs: formula, diapers, blankets, bottles, baby food, shampoo and lotion. This program serves approximately 60 families each month. The items are given free of charge but do require a referral from a social worker, doctor or hospital.</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="card">
+					<div class="card-header" role="tab" id="heading4">
+						<a  class="row" data-toggle="collapse" data-parent="#programsAccordion" href="#christmasParty" aria-expanded="false"
+						aria-controls="collapse4">
+							<i class="fas fa-candy-cane col-2 icon"></i>
+							<h3 class="col mb-0 mt-3">
+								Christmas Party
+							</h3>
+							<i class="col-2 text-right fas fa-angle-down rotate-icon fa-2x"></i>
+						</a>
+					</div>
+					<div id="christmasParty" class="collapse" role="tabpanel" aria-labelledby="heading4"
+					data-parent="#programsAccordion">
+						<div class="card-body">
+							<p>An Annual Christmas Party is held in December. This outreach has grown into a very large and heartwarming event. Thanks to hundreds of generous donors and organizations we are able to serve over 1,300 children and 600 adults. In addition to a warm holiday meal, Mary's Mercy Center gives each child a new wrapped gift and candy. As a special surprise each child participates in a drawing. If their ticket says "WINNER" they receive a larger gift and if the ticket says "BIKE" they receive a new bike. Adults and older teens receive a "shoebox" with toiletries and some special item, a wallet, cologne, or a scarf for example.</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="card">
+					<div class="card-header" role="tab" id="heading4">
+						<a  class="row" data-toggle="collapse" data-parent="#programsAccordion" href="#vhm" aria-expanded="false"
+						aria-controls="collapse4">
+							<i class="fas fa-clinic-medical col-2 icon"></i>
+							<h3 class="col mb-0 mt-3">
+								Veronica’s Home of Mercy I & II
+							</h3>
+							<i class="col-2 text-right fas fa-angle-down rotate-icon fa-2x"></i>
+						</a>
+					</div>
+					<div id="vhm" class="collapse" role="tabpanel" aria-labelledby="heading4"
+					data-parent="#programsAccordion">
+						<div class="card-body">
+							<p>Veronica's Home of Mercy I and Veronica's Home of Mercy II, long-term Catholic/Christian residential homes, are committed to providing a home for adult pregnant women and their children as a healthy alternative to abortion, domestic violence, substance abuse and/or homelessness. Veronica's Home of Mercy provides a loving and affirming atmosphere that will restore dignity to women. The goal is to enable the individual woman to integrate into society and live with a renewed sense of her own worth and dignity. It is important to know that Veronica's Home of Mercy has never refused admission to any woman because of race, creed or lack of funds<br>
+							Our Program is extensive and comprehensive. Qualified staff provide drug and alcohol counseling, twelve-step meetings, child care, transportation, life skills and 24-hour supervision. In collaboration with ten other institutions and professional programs within the community Veronica's Home of Mercy offers the following:</p>
+							<ul>
+								<li>Mental Health
+								<li>Coping Skills</li>
+								<li>Bible Sharing</li>
+								<li>Drug & Alcohol Reha</li>
+								<li>Domestic Violence Education & Counseling</li>
+								<li>Rape Crisis Counseling</li>
+								<li>Family Counseling</li>
+								<li>Self Reliance and Child Development Education</li>
+								<li>Budgeting</li>
+								<li>Cooking</li>
+								<li>Child Care</li>
+								<li>Prenatal Classes</li>
+								<li>Dental Hygiene</li>
+								<li>Extensive Parenting Classes</li>
+								<li>GED Preparation</li>
+								<li>Tutoring</li>
+							</ul>
+							<p>Veronica's Home of Mercy has deep roots in the community. We are committed to the larger community, and the larger community is committed and involved with Veronica's Home of Mercy.</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="card">
+					<div class="card-header" role="tab" id="heading4">
+						<a  class="row" data-toggle="collapse" data-parent="#programsAccordion" href="#cm" aria-expanded="false"
+						aria-controls="collapse4">
+							<i class="fas fa-place-of-worship col-2 icon"></i>
+							<h3 class="col mb-0 mt-3">
+								Casa Merced I, II & III
+							</h3>
+							<i class="col-2 text-right fas fa-angle-down rotate-icon fa-2x"></i>
+						</a>
+					</div>
+					<div id="cm" class="collapse" role="tabpanel" aria-labelledby="heading4"
+					data-parent="#programsAccordion">
+						<div class="card-body">
+							<p>After Care</p>
+							<p>Follow through is very important. It can mean the difference between a resident's success and failure. Casa Merced I, Casa Merced II and Casa Merced III are our re-entry homes. These single-family residential homes are reserved for women who have finished the program at Veronica's Home of Mercy and are doing extremely well but are in need of some assistance until they finish school. These homes provide a more relaxed atmosphere and greater independence. The low rent and access to the support of the staff helps ease the women back into society.</p>
+							<p>We encourage our residents to keep in touch with us. Our staff, in-house classes and activities are readily available to our graduates. If they leave in good standing we invite them to come back and celebrate holidays and birthdays with us. This is especially helpful for those who have no family</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="card">
+					<div class="card-header" role="tab" id="heading4">
+						<a  class="row" data-toggle="collapse" data-parent="#programsAccordion" href="#mv" aria-expanded="false"
+						aria-controls="collapse4">
+							<i class="fas fa-church col-2 icon"></i>
+							<h3 class="col mb-0 mt-3">
+								Mary's Village
+							</h3>
+							<i class="col-2 text-right fas fa-angle-down rotate-icon fa-2x"></i>
+						</a>
+					</div>
+					<div id="mv" class="collapse" role="tabpanel" aria-labelledby="heading4"
+					data-parent="#programsAccordion">
+						<div class="card-body">
+							<p>With 47% of the city residents on welfare, food stamps, Medi-Cal, or a combination thereof; 38% living at or below the poverty level; and over 50% of the population is living at 200% of the federal poverty level, San Bernardino is the second poorest city in the nation just behind Detroit.
+							</p>
+							<p>While the City of San Bernardino accounts for only 10% of the county’s population it has 40% of its homeless population and approximately 70% are males. The San Bernardino County 2013 Homeless Count and Subpopulation Survey found 2,321 homeless individuals throughout the county. Approximately 45% of the homeless population had been homeless for a year or more, 34% abused alcohol and/or drugs and 26% experienced mental illness.</p>
+							<p>Most individuals experiencing homelessness reported a job loss, unemployment or alcohol/drug use as the primary event or condition that led to their homelessness. Without structured, formal, comprehensive support, many of these individuals will remain living on the streets and resort to criminal activities resulting in increased costs to the taxpayers and a decrease in community safety.</p>
+							<p>There are comprehensive programs for homeless women and homeless women with children however there are no comprehensive housing programs for homeless men in the Central San Bernardino Region.</p>
+							<p>Mary’s Mercy Center has been serving homeless individuals and individuals at-risk of becoming homeless with dignity and respect since 1987. Over the years, thousands of individuals have received hot meals, clothing, supportive services, showers, food, medical and dental services through Mary’s Mercy Center.Since 1995, Mary’s Mercy Center has been providing women and women with children comprehensive, transitional housing services. This program has grown and now serves well over 100 individuals annually.</p>
+							<p>In 2012, with an understanding of the lack of resources for homeless men, Mary’s Mercy Center made a commitment to provide the same high quality, evidence-based programming for men that they do for women. Mary’s Village will provide comprehensive services including behavioral health, medical and other supportive services, at one location. Mary’s Mercy Center is looking forward to working with the community to improve the lives of homeless individuals, thus changing the entire community.”</p>
+							<p><em>“We have made at least the start in discovering the meaning in human life when we plant shade trees under which we will never sit.”
+								-Elton Trueblood</em></p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!--- Funding -->
+	<section class="container-fluid padding" id="funding">
+		<div class="row padding">
+			<div class="col-lg-6">
+				<h2>Mary's Mercy Center, Inc. is funded<br>
+					in part by the following entities:</h2>
+				<ul>
+					<li>Arrowhead United Way</li>
+					<li>Bank of America</li>
+					<li>Dignity Health</li>
+					<li>Community Foundation</li>
+					<li>S. L. Gimbel Foundation.</li>
+					<li>Sisters of Mercy</li>
+					<li>Sisters of the Incarnate Word</li>
+					<li>Diocese of San Bernardino Sacrificial Giving Grant</li>
+					<li>TJK Company</li>
+					<li>Kaiser Permanente Community Benefit</li>
+				</ul>
+				<br>
+				<h4>Contributors to the refurbishment costs<br>
+					of Veronica's Home of Mercy I:</h4>
+				<ul>
+					<li>City of San Bernardino : Economic Development Agency
+					</li>
+					<li>Crestwood Corporation</li>
+					<li>San Manuel Mission Band of Indians</li>
+				</ul>
+			</div>
+			<div class="col-lg-6">
+				<img src='img/fundraising.png' class="img-fluid">
+			</div>
+		</div>
+	</section>
+
+	<!--- Board of Directors -->
+	<section class="container-fluid padding text-center" id="boardOfDirectors">
+		<h1 class="display-3 py-4">
+			Board of Directors
+		</h1>
+		<div class="row">
+			<div class="col-md-6">
+				<img class="img-fluid" src="img/frBarry.png" alt="Father Barry, President/Chairman of the Board">
+			</div>
+			<ul class="col-md-6">
+				<li>SS.CC: President/Chairman of the Board:<br>
+					Father Michael Barry</li>
+				<li>Vice President and Administrator:<br>
+					Mike Hein</li>
+				<li>Secretary:<br>
+					Agnes Bryant</li>
+				<li>Mary Bradfield</li>
+				<li>Sister Maura Feeley</li>
+				<li>Jerry & Nell Hackbarth</li>
+				<li>Carl Jones</li>
+				<li>Terry Kent</li>
+				<li>Terry and Ellie Klenske</li>
+				<li>Dena Larson</li>
+				<li>Cindy Ludvigsen</li>
+				<li>Ed Lugo</li>
+				<li>John Morrissey</li>
+				<li>Harriet Roggenbuck</li>
+			</ul>
+		</div>
+	</section>
+
+	<!--- About -->
+	<section class="container-fluid padding">
+		<div class="row padding">
+			<div class="col-lg-6">
+				<h2>Why Mary's Mercy Center</h2>
+				<p>Although many non-profits work and partner with the city and county in which they reside, all working towards ending homelessness, the reality is that an end to homelessness may not be possible, and if it is, at the very least as our Lord said "<em>The poor you will always have with you</em>" (Matthew 26:10-12). They are our brothers and sisters in Christ. Regardless of why our brothers and sisters are poor or what their condition of life is, they have the inherent right to be able to have the necessities for human life that bring dignity and hope.</p>
+
+				<p>Here at Mary's Mercy Center we have a constant flow of poor and homeless people. The numbers fluctuate from time to time but slight decreases are not long lasting. In sharp contrast the needs of the poor and homeless have increased dramatically. Where providing food and clothing for individuals and families seemed to be enough, now the needs have broadened, i.e., there is need for gasoline money at the end of the month, the poor cannot always pay all of their rent or utilities, cannot afford school backpacks or supplies to put in them, there is not enough money to fill prescriptions, no money for car repairs, no money for new shoes to replace the severely worn ones. Preventative medicine for the poor and homeless is nonexistent, simple needs for infants are unaffordable, and the list goes on. There is a deepening need among our brothers and sisters. Whether it is seen or unseen, the terrible need is there and, sadly, growing.</p>
+			
+				<p>Facts</p>
+				<ul>
+					<li>It is estimated that 23.8% of the children in San Bernardino live in poverty (1). This statistic is based on the Federal Poverty Threshold which is not adjusted for an area's cost of living.</li>
+					<li>Nationally, California ranks 4th in size of homeless population. (2)</li>
+					<li>41% of the homeless population is comprised of families. Families are the fastest growing segment of the homeless population. The number of homeless families might actually be higher as homeless families often double up with other families. The families that double up are not counted and often prevented from receiving assistance. (3)</li>
+					<li>The statics are startling, bigger and different than most would imagine!</li>
+				</ul>
+				<p>*1 KidsData.org "Children in Poverty" (Regions of 250,000 Residents or More): 2009<br>
+				*2 National Coalition for the Homeless  (state statistics)<br>
+				*3 National Coalition for the Homeless (Homeless Families with Children): July 2009</p>
+				<br>
+			</div>
+			<div class="col-lg-6">
+				<img src='img/homeless.png' class="img-fluid">
+			</div>
+		</div>
+	</section>
+
+
+	<!--- Connect -->
+	<div class="container-fluid padding" id="connect">
+		<div class="row text-center padding">
+			<div class="col-12">
+				<h2>Connect</h2>
+			</div>
+			<div class="col-12 social padding">
+				<a href="#"><i class="fab fa-facebook"></i></a>
+				<a href="#"><i class="fab fa-twitter"></i></a>
+				<a href="#"><i class="fab fa-google-plus-g"></i></a>
+				<a href="#"><i class="fab fa-instagram"></i></a>
+				<a href="#"><i class="fab fa-youtube"></i></a>
+			</div>
+		</div>
+	</div>
+
+	<!--- Footer -->
+	<footer>
+		<div class="container-fluid padding">
+			<div class="row text-center">
+				<div class="col-md-4">
+					<hr class="light">
+					<p><i class="fas fa-phone"></i> (909) 889-2558</p>
+					<p><i class="fas fa-fax"></i> (909) 386-7704</p>
+					<p>mmcinc@msn.com</p>
+					<p>P O Box 7563</p>
+					<p>San Bernardino, CA 92411</p>
+				</div>
+				<div class="col-md-4">
+					<hr class="light">
+					<h5>Our hours</h5>
+					<hr class="light">
+					<p>Monday - Thursday</p>
+					<p>9:00am - 4:00pm PST</p>
+				</div>
+				<div class="col-md-4">
+					<hr class="light">
+					<h5>Office Address</h5>
+					<hr class="light">
+					<p>641 N Roberds Ave.</p>
+					<p>San Bernardino, CA 92411</p>
+				</div>
+				<div class="col-12">
+					<hr class="light-100">
+					<h5>&copy; cookies4Christ.org</h5>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+
+
+</body>
+</html>
