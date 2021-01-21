@@ -4,11 +4,13 @@ blue: #c4dae5;
 brown: #5c472c;
 */
 
-html, body {
+html,
+body {
   height: 100%;
   width: 100%;
   font-family: sans-serif;
   color: #222;
+  scroll-behavior: smooth;
 }
 
 .padding {
@@ -16,13 +18,13 @@ html, body {
 }
 
 section {
-  padding: 15px 0;
+  padding: 4rem 0;
 }
 
 /*==================
  BUTTONS 
  ==================*/
- .btn-primary {
+.btn-primary {
   background-color: #5c472c;
   border: 1px solid #5c472c;
 }
@@ -36,8 +38,9 @@ section {
  NAV BAR 
  ==================*/
 .navbar {
-  padding: .8rem;
+  padding: 0.8rem;
   background-color: #c4dae5 !important;
+  box-shadow: 1px 1px 12px #808080c4;
 }
 
 .navbar-nav li {
@@ -47,6 +50,10 @@ section {
 .nav-link {
   font-size: 1.1em !important;
 }
+
+.navbar-toggler {
+  outline-color: transparent !important;
+}
 /*==================
  INTRO 
  ==================*/
@@ -54,7 +61,8 @@ section {
   position: relative;
   width: 100%;
   height: 90%;
-  background-image: linear-gradient(#c4dae591, #c4dae594), url('img/background.png');
+  background-image: linear-gradient(#c4dae591, #c4dae594),
+    url("img/background.png");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -63,7 +71,7 @@ section {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%,-50%);
+  transform: translate(-50%, -50%);
   width: 75%;
   color: #f2f5f7;
   text-align: center;
@@ -108,19 +116,22 @@ section {
 }
 
 .mmcDonation {
-  background-image: linear-gradient(#c4dae5d1 , #c4dae5fc), url(img/background.png);
+  background-image: linear-gradient(#c4dae5d1, #c4dae5fc),
+    url(img/background.png);
 }
 
 .vhmDonation {
-  background-image: linear-gradient(#c4dae5d1 , #c4dae5fc), url(img/veronicasHomeOfMercyI.png);
+  background-image: linear-gradient(#c4dae5d1, #c4dae5fc),
+    url(img/veronicasHomeOfMercyI.png);
 }
 
 .mtDonation {
-  background-image: linear-gradient(#c4dae5d1 , #c4dae5fc), url(img/mmcTable.png);
+  background-image: linear-gradient(#c4dae5d1, #c4dae5fc), url(img/mmcTable.png);
 }
 
 .mvDonation {
-  background-image: linear-gradient(#c4dae5d1 , #c4dae5fc), url(img/marysVillage.png);
+  background-image: linear-gradient(#c4dae5d1, #c4dae5fc),
+    url(img/marysVillage.png);
 }
 
 .shoppingCart {
@@ -149,10 +160,10 @@ section {
   padding-top: 2rem;
 }
 
-.welcome hr{
+.welcome hr {
   border-top: 2px solid #b4b4b4;
   width: 90%;
-  margin-top: .3rem;
+  margin-top: 0.3rem;
   margin-bottom: 1rem;
 }
 
@@ -165,10 +176,10 @@ section {
 /*==================
  PROGRAMS AND SERVICES 
  ==================*/
- .cardHolder {
-   max-width: 800px;
- }
-.card{
+.cardHolder {
+  max-width: 800px;
+}
+.card {
   margin-bottom: 15px;
 }
 
@@ -178,7 +189,7 @@ section {
   overflow: hidden;
 }
 
-#programsAccordion a{
+#programsAccordion a {
   color: #0000009e;
   width: 100%;
   margin: 0;
@@ -189,7 +200,7 @@ section {
   color: #000;
 }
 
-#programsAccordion .icon{
+#programsAccordion .icon {
   color: #c4dae5;
   background-color: #5c472c;
   text-align: center;
@@ -203,59 +214,68 @@ section {
 }
 
 #marysTable .card-body {
-  background-image: linear-gradient(#f4f9fbd9, #f4f9fbb8), url('img/mmcTable.png');
+  background-image: linear-gradient(#f4f9fbd9, #f4f9fbb8),
+    url("img/mmcTable.png");
 }
 
 #foodBag .card-body {
-  background-image: linear-gradient(#f4f9fbd9, #f4f9fbb8), url('img/foodBagProgram.png');
+  background-image: linear-gradient(#f4f9fbd9, #f4f9fbb8),
+    url("img/foodBagProgram.png");
 }
 
 #showers .card-body {
-  background-image: linear-gradient(#f4f9fbd9, #f4f9fbb8), url('img/shower.png');
+  background-image: linear-gradient(#f4f9fbd9, #f4f9fbb8), url("img/shower.png");
 }
 
 #medicalScreening .card-body {
-  background-image: linear-gradient(#f4f9fbd9, #f4f9fbb8), url('img/medical1.png');
+  background-image: linear-gradient(#f4f9fbd9, #f4f9fbb8),
+    url("img/medical1.png");
 }
 
 #dentalClinic .card-body {
-  background-image: linear-gradient(#f4f9fbd9, #f4f9fbb8), url('img/medical2.png');
+  background-image: linear-gradient(#f4f9fbd9, #f4f9fbb8),
+    url("img/medical2.png");
 }
 
 #clothesCloset .card-body {
-  background-image: linear-gradient(#f4f9fbd9, #f4f9fbb8), url('img/closet.png');
+  background-image: linear-gradient(#f4f9fbd9, #f4f9fbb8), url("img/closet.png");
 }
 
 #childrensProg .card-body {
-  background-image: linear-gradient(#f4f9fbd9, #f4f9fbb8), url('img/children.png');
+  background-image: linear-gradient(#f4f9fbd9, #f4f9fbb8),
+    url("img/children.png");
 }
 
 #christmasParty .card-body {
-  background-image: linear-gradient(#f4f9fbd9, #f4f9fbb8), url('img/christmas.png');
+  background-image: linear-gradient(#f4f9fbd9, #f4f9fbb8),
+    url("img/christmas.png");
 }
 
 #vhm .card-body {
-  background-image: linear-gradient(#f4f9fbd9, #f4f9fbb8), url('img/veronicasHomeOfMercyI.png');
+  background-image: linear-gradient(#f4f9fbd9, #f4f9fbb8),
+    url("img/veronicasHomeOfMercyI.png");
 }
 
 #cm .card-body {
-  background-image: linear-gradient(#f4f9fbd9, #f4f9fbb8), url('img/veronica2.png');
+  background-image: linear-gradient(#f4f9fbd9, #f4f9fbb8),
+    url("img/veronica2.png");
 }
 
 #mv .card-body {
-  background-image: linear-gradient(#f4f9fbd9, #f4f9fbb8), url('img/marysVillage.png');
+  background-image: linear-gradient(#f4f9fbd9, #f4f9fbb8),
+    url("img/marysVillage.png");
 }
 
 /*==================
  BOARD OF DIRECTORS 
  ==================*/
- #boardOfDirectors {
-   background-color:  #c4dae5;
- }
+#boardOfDirectors {
+  background-color: #c4dae5;
+}
 
- #boardOfDirectors li {
-   list-style: none;
- }
+#boardOfDirectors li {
+  list-style: none;
+}
 
 /*==================
  CONTACT 
@@ -267,13 +287,13 @@ section {
 }
 
 .social a:hover {
-  color: #c4dae5
+  color: #c4dae5;
 }
 
 /*==================
  FOOTER 
  ==================*/
-footer{
+footer {
   background-color: #5c472c;
   color: #d5d5d5;
   padding-top: 2rem;
@@ -282,7 +302,7 @@ footer{
 hr.light {
   border-top: 1px solid #d5d5d5;
   width: 75%;
-  margin-top: .8rem;
+  margin-top: 0.8rem;
   margin-bottom: 1rem;
 }
 
@@ -290,17 +310,22 @@ footer a {
   color: #d5d5d5;
 }
 
+footer a:hover {
+  color: #f2f5f7;
+  text-decoration: none;
+  font-weight: bold;
+}
+
 hr.light-100 {
   border-top: 1px solid #d5d5d5;
   width: 100%;
-  margin-top: .8rem;
+  margin-top: 0.8rem;
   margin-bottom: 1rem;
-
 }
 
 /*---Media Queries --*/
 @media (max-width: 992px) {
-  .social a{
+  .social a {
     font-size: 4em;
     padding: 2rem;
   }
@@ -315,7 +340,7 @@ hr.light-100 {
   .intro-caption h3 {
     font-size: 140%;
     font-weight: 400;
-    padding-bottom: .2rem;
+    padding-bottom: 0.2rem;
   }
   .intro-caption .btn {
     font-size: 95%;
@@ -324,7 +349,7 @@ hr.light-100 {
   .display-4 {
     font-size: 200%;
   }
-  .social a{
+  .social a {
     font-size: 2.5em;
     padding: 1.2rem;
   }
@@ -346,20 +371,16 @@ hr.light-100 {
   .display-4 {
     font-size: 160%;
   }
-  .social a{
+  .social a {
     font-size: 2em;
-    padding: .7rem;
+    padding: 0.7rem;
   }
 }
 
 /*--- Bootstrap Padding Fix --*/
 [class*="col-"] {
-    padding: 1rem;
+  padding: 1rem;
 }
-
-
-
-
 
 /*
 Extra small (xs) devices (portrait phones, less than 576px)
@@ -377,11 +398,3 @@ Large (lg) devices (desktops, 992px and up)
 Extra (xl) large devices (large desktops, 1200px and up)
 @media (min-width: 1200px) { ... }
 */
-
-
-
-
-
-
-
-
