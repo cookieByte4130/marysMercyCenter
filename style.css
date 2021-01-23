@@ -17,6 +17,16 @@ section {
   padding: 4rem 0;
 }
 
+.themed-bg {
+  background-color: #c4dae5;
+}
+
+p,
+li:not(.nav-item) {
+  line-height: 2;
+  font-size: 1.5rem;
+}
+
 /*==================
  BUTTONS 
  ==================*/
@@ -90,7 +100,7 @@ section {
  DONATION 
  ==================*/
 .donation {
-  padding-top: 50px;
+  padding-top: 1rem;
 }
 
 .donationSelection {
@@ -250,10 +260,6 @@ section {
 /*==================
  BOARD OF DIRECTORS 
  ==================*/
-#boardOfDirectors {
-  background-color: #c4dae5;
-}
-
 #boardOfDirectors li {
   list-style: none;
 }
@@ -272,22 +278,9 @@ section {
 }
 
 /*==================
- CONTACT 
- ==================*/
-.social a {
-  font-size: 4.5em;
-  padding: 3rem;
-  color: #5c472c;
-}
-
-.social a:hover {
-  color: #c4dae5;
-}
-
-/*==================
  FOOTER 
  ==================*/
-footer {
+#contactUs {
   background-color: #5c472c;
   color: #d5d5d5;
   padding-top: 2rem;
@@ -300,11 +293,11 @@ hr.light {
   margin-bottom: 1rem;
 }
 
-footer a {
+#contactUs a {
   color: #d5d5d5;
 }
 
-footer a:hover {
+#contactUs a:hover {
   color: #f2f5f7;
   text-decoration: none;
   font-weight: bold;
@@ -318,12 +311,7 @@ hr.light-100 {
 }
 
 /*---Media Queries --*/
-@media (max-width: 992px) {
-  .social a {
-    font-size: 4em;
-    padding: 2rem;
-  }
-}
+
 @media (max-width: 768px) {
   .intro-caption {
     top: 45%;
@@ -343,10 +331,6 @@ hr.light-100 {
   .display-4 {
     font-size: 200%;
   }
-  .social a {
-    font-size: 2.5em;
-    padding: 1.2rem;
-  }
 }
 @media (max-width: 576px) {
   .intro-caption {
@@ -364,10 +348,6 @@ hr.light-100 {
   }
   .display-4 {
     font-size: 160%;
-  }
-  .social a {
-    font-size: 2em;
-    padding: 0.7rem;
   }
 }
 

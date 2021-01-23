@@ -20,9 +20,9 @@
   </head>
   <body>
     <!-- Navigation -->
-    <nav class="navbar navbar-expand-md navbar-light bg-light fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#">Mary's Mercy Center</a>
+        <a class="navbar-brand nav-item active" href="#">Mary's Mercy Center</a>
         <button
           class="navbar-toggler"
           type="button"
@@ -34,10 +34,16 @@
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item">
+              <a class="nav-link" href="#donate">Donate</a>
+            </li>
+            <li class="nav-item">
               <a class="nav-link" href="#about">About</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#services">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#volunteer">Volunteer</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#funding">Funding</a>
@@ -46,6 +52,9 @@
               <a class="nav-link" href="#boardOfDirectors"
                 >Board of Directors</a
               >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#whyMMC">Why Us</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#contactUs">Contact Us</a>
@@ -75,7 +84,7 @@
     </section>
 
     <!--Donation form-->
-    <section class="container-fluid donation" id="donation">
+    <section id="donate" class="container-fluid donation" id="donation">
       <h1 class="display-3 text-center">Become a Donor</h1>
       <p class="text-center">
         It’s the easiest way to give and ensure that Mary's Mercy Center,
@@ -136,7 +145,7 @@
     <section class="container-fluid" id="about">
       <div class="container">
         <h1 class="display-3">About Us</h1>
-        <p class="lead">
+        <p>
           Mary's Mercy Center, Inc. is a public non-profit organization which is
           committed to serve all races, creeds and conditions of life, and
           extending unconditional love, acceptance, and respect to all who come
@@ -154,7 +163,7 @@
         >
           Our Story
         </button>
-        <p class="collapse lead" id="ourStory">
+        <p class="collapse" id="ourStory">
           Our journey began in the mid 1980’s with a divinely inspired vision
           shared by members of the Catholic charismatic Renewal Center, under
           the direction of Fr. Michael Barry. Challenged by the example and
@@ -717,7 +726,7 @@
     </section>
 
     <!-- Volunteering -->
-    <section id="volunteer" class="container-fluid">
+    <section id="volunteer" class="container-fluid themed-bg">
       <div class="container">
         <h1 class="display-4">Volunteers and community participation</h1>
         <p>
@@ -806,7 +815,10 @@
     </section>
 
     <!--- Board of Directors -->
-    <section class="container-fluid text-center" id="boardOfDirectors">
+    <section
+      class="container-fluid text-center themed-bg"
+      id="boardOfDirectors"
+    >
       <div class="container">
         <h1 class="display-3 py-4">Board of Directors</h1>
         <div class="row">
@@ -923,7 +935,7 @@
     </section>
 
     <!--- Footer -->
-    <footer id="contactUs" class="container-fluid">
+    <section id="contactUs" class="container-fluid">
       <div class="row text-center">
         <div class="col-md-4">
           <hr class="light" />
@@ -961,6 +973,6 @@
           <h5>&copy; cookies4Christ.org</h5>
         </div>
       </div>
-    </footer>
+    </section>
   </body>
 </html>
