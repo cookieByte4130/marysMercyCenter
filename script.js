@@ -20,11 +20,23 @@ changeLinkState();
 window.addEventListener("scroll", changeLinkState);
 
 //donate margin-top shows when section is hidden
-{
-  /* <a
-  name="PayPalButton-1 $50 MMC DONATION MMCDONATION$50.00"
-  target="paypal"
-  href="/~site/Scripts_ForSale/ForSale.dll?CMD=CMDPayPalBuyButton&amp;PRODUCT_ID=4334493&amp;SHIPPING=false&amp;NOTE=false&amp;HSID=1761509101&amp;USERID=3268953"
-  onclick="window.open('/~site/Scripts_ForSale/ForSale.dll?CMD=CMDPayPalBuyButton&amp;PRODUCT_ID=4334493&amp;SHIPPING=false&amp;NOTE=false&amp;HSID=1761509101&amp;USERID=3268953','paypal','width=600,height=400,scrollbars,location,resizable,status');return false"
-></a>; */
-}
+const orgEl = document.querySelector("#org");
+
+orgEl.addEventListener("change", (e) => {
+  const preview = document.querySelector(".donationPreview");
+
+  let bgImg = `background`;
+  switch (e.target.value) {
+    case "MMC":
+      bgImg = `background`;
+      break;
+    case "VHM":
+      bgImg = `veronicasHomeOfMercyI`;
+      break;
+    case "MV":
+      bgImg = `marysVillage`;
+      break;
+  }
+
+  preview.style.backgroundImage = `url(img/${bgImg}.png)`;
+});

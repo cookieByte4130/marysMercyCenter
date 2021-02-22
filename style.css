@@ -1,9 +1,3 @@
-/*
-COLORS:
-blue: #c4dae5;
-brown: var(--secondary-color);
-*/
-
 :root {
   --primary-color: #c4dae5;
   --secondary-color: #5c472c;
@@ -24,12 +18,6 @@ section {
 
 .themed-bg {
   background-color: #c4dae5;
-}
-
-p,
-li:not(.nav-item) {
-  line-height: 2;
-  font-size: 1.5rem;
 }
 
 /*==================
@@ -104,46 +92,41 @@ li:not(.nav-item) {
 /*==================
  DONATION 
  ==================*/
-.donationSelection {
-  color: var(--secondary-color);
-  margin-top: 10px;
-  border-radius: 10px;
-  padding: 11px;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+form {
+  border: 1px solid var(--secondary-color);
+  border-radius: 5px;
+  margin-top: 1rem;
+  padding: 1rem;
 }
 
-.donationSelection h4 {
+.donation,
+.donationPreview {
+  width: 49%;
+  display: inline-block;
+}
+
+input,
+select {
+  color: var(--font-color);
+  border: 1px solid var(--primary-color);
+  border-radius: 5px;
+  padding: 5px;
+  display: block;
+  margin: 1rem 0;
+  width: 200px;
+}
+
+input {
   text-align: center;
 }
 
-.donationSelection button {
-  width: 15%;
-}
-
-.mmcDonation {
-  background-image: linear-gradient(#c4dae5d1, #c4dae5fc),
-    url(img/background.png);
-}
-
-.vhmDonation {
-  background-image: linear-gradient(#c4dae5d1, #c4dae5fc),
-    url(img/veronicasHomeOfMercyI.png);
-}
-
-.mtDonation {
-  background-image: linear-gradient(#c4dae5d1, #c4dae5fc), url(img/mmcTable.png);
-}
-
-.mvDonation {
-  background-image: linear-gradient(#c4dae5d1, #c4dae5fc),
-    url(img/marysVillage.png);
-}
-
-.shoppingCart {
-  display: block;
-  margin: 20px auto;
+.donationPreview {
+  height: 150px;
+  border-radius: 5px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-image: url("img/background.png");
 }
 
 .deduction {

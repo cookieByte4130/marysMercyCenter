@@ -84,8 +84,6 @@
     <!--- Our Mission -->
     <section id="whyMMC" class="container-fluid">
       <div class="container">
-        <!-- <div class="row">
-                  <div class="col-lg-6"> -->
         <h1 class="display-3 text-center">Our Mission</h1>
 
         <div class="d-flex flex-column flex-lg-row justify-content-between">
@@ -187,63 +185,36 @@
     </section>
 
     <!--Donation form-->
-    <section id="donate" class="container-fluid donation">
+    <section id="donate" class="container-fluid">
       <div class="container">
         <h1 class="display-3 text-center">Become a Donor</h1>
-        <p class="text-center">
+        <p>
           It’s the easiest way to give and ensure that Mary's Mercy Center,
           Veronica's Home of Mercy, or Mary's Table, receives your ongoing
           support
         </p>
-        <form class="container">
-          <div class="donationSelection mmcDonation">
-            <h4>Mary's Mercy Center</h4>
-            <div class="d-flex justify-content-between">
-              <button class="btn btn-outline-secondary">$50</button>
-              <button class="btn btn-outline-secondary">$100</button>
-              <button class="btn btn-outline-secondary">$250</button>
-              <button class="btn btn-outline-secondary">$500</button>
-              <button class="btn btn-outline-secondary">$1000</button>
-            </div>
+        <form>
+          <div class="donation">
+            <select name="org" id="org">
+              <option value="MMC">Mary's Mercy Center</option>
+              <option value="VHM">Veronica's Home of Mercy</option>
+              <option value="MV">Mary's Village</option>
+            </select>
+            <input
+              type="number"
+              id="amount"
+              name="amount"
+              min="1"
+              value="500"
+            />
+            <button class="btn" type="submit">Donate</button>
           </div>
-          <div class="donationSelection vhmDonation">
-            <h4>Veronica's Home of Mercy</h4>
-            <div class="d-flex justify-content-between">
-              <button class="btn btn-outline-secondary">$50</button>
-              <button class="btn btn-outline-secondary">$100</button>
-              <button class="btn btn-outline-secondary">$250</button>
-              <button class="btn btn-outline-secondary">$500</button>
-              <button class="btn btn-outline-secondary">$1000</button>
-            </div>
-          </div>
-          <div class="donationSelection mtDonation">
-            <h4>Mary's Table</h4>
-            <div class="d-flex justify-content-between">
-              <button class="btn btn-outline-secondary">$50</button>
-              <button class="btn btn-outline-secondary">$100</button>
-              <button class="btn btn-outline-secondary">$250</button>
-              <button class="btn btn-outline-secondary">$500</button>
-              <button class="btn btn-outline-secondary">$1000</button>
-            </div>
-          </div>
-          <div class="donationSelection mvDonation">
-            <h4>Mary's Village</h4>
-            <div class="d-flex justify-content-between">
-              <button class="btn btn-outline-secondary">$50</button>
-              <button class="btn btn-outline-secondary">$100</button>
-              <button class="btn btn-outline-secondary">$250</button>
-              <button class="btn btn-outline-secondary">$500</button>
-              <button class="btn btn-outline-secondary">$1000</button>
-            </div>
-          </div>
-          <button class="btn btn-lg btn-primary shoppingCart">
-            View Shopping Cart
-          </button>
-          <p class="deduction">
-            All donations are tax deductible.<br />
-            Mary's Mercy Center, Inc. Tax ID 33-0632426
-          </p>
+          <div class="donationPreview"></div>
         </form>
+        <p class="deduction">
+          All donations are tax deductible.<br />
+          Mary's Mercy Center, Inc. Tax ID 33-0632426
+        </p>
       </div>
     </section>
 
