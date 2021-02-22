@@ -195,11 +195,13 @@
         </p>
         <form>
           <div class="donation">
+            <label for="org">Select an organization:</label>
             <select name="org" id="org">
               <option value="MMC">Mary's Mercy Center</option>
               <option value="VHM">Veronica's Home of Mercy</option>
               <option value="MV">Mary's Village</option>
             </select>
+            <label for="amount">Select the amount to donate:</label>
             <input
               type="number"
               id="amount"
@@ -207,9 +209,9 @@
               min="1"
               value="500"
             />
-            <button class="btn" type="submit">Donate</button>
+            <button class="btn btn-primary" type="submit">Donate</button>
           </div>
-          <div class="donationPreview"></div>
+          <img class="donationPreview" src="img/background.png" />
         </form>
         <p class="deduction">
           All donations are tax deductible.<br />
@@ -231,55 +233,54 @@
           help people grow into useful, affirmed people in today's world.
           Restoring dignity to the poor and marginalized, we serve the young,
           the old and the mentally and physically challenged.
+          <br />
+          <span class="hidden text-justify" id="ourStory">
+            Our journey began in the mid 1980’s with a divinely inspired vision
+            shared by members of the Catholic charismatic Renewal Center, under
+            the direction of Fr. Michael Barry. Challenged by the example and
+            teachings of Jesus, we began to reach out and serve the poor in our
+            local communities, working first in local parks with supplies of
+            food and money to cover utility bills.
+            <br />
+            From these early outreach efforts, we moved to open a soup kitchen
+            at Our Lady of Fatima Church in San Bernardino. Soon, the Lutheran
+            Church of Our Savior added their hands and hearts; and then, Our
+            Lady of Guadalupe Church followed with a larger kitchen and dining
+            facility at their location. By 1990, Mary’s Table, as the soup
+            kitchen had come to be known, had expanded to five days a week and
+            was serving over 5,000 hot meals each month. It had become a haven,
+            a place of rest, fellowship and renewal for many. In 1996, a free
+            medical screening was added to Mary’s Mercy Center, which had
+            already expanded to include a clothes closet, an emergency food bag
+            program and other services.
+            <br />
+            Even before this, in 1989, fundraising had begun with the help of
+            the 300 Club for a major expansion that would become Mary’s Mercy
+            Center. In 1992, we purchased our present building and became
+            incorporated as a non-profit public benefit corporation, organized
+            exclusively for charitable, religious and education purposes. In
+            1993, the Sisters of Charity of the Incarnate Word provided a
+            substantial grant for the purchase of an old convent that would be
+            transformed into Veronica’s Home of Mercy. Veronica’s Home of Mercy
+            was opened in 1995. Before that Casa Merced (a HUD House) opened its
+            doors in 1994. Then in 2009 Veronica’s Home II opened its doors.
+            <br />
+            Mary’s Mercy Center currently welcomes approximately 300 volunteers
+            of various faiths, schools, and community organizations from
+            throughout Southern California. We are proud to network with city
+            agencies, county agencies, and other non-profits to direct our
+            clients to additional resources. The goal is to restore dignity and
+            purpose to the homeless, the poor and the marginalized. Homelessness
+            and poverty are complicated issues and the solutions are as varied
+            as the individuals we serve. Together we are making a difference in
+            the lives of many.
+          </span>
         </p>
         <!--see more toggle-->
-        <button
-          class="btn btn-outline-secondary btn-lg"
-          data-toggle="collapse"
-          data-target="#ourStory"
-        >
-          Our Story
+
+        <button id="ourStoryToggle" class="btn btn-outline-secondary">
+          See More
         </button>
-        <p class="collapse" id="ourStory">
-          Our journey began in the mid 1980’s with a divinely inspired vision
-          shared by members of the Catholic charismatic Renewal Center, under
-          the direction of Fr. Michael Barry. Challenged by the example and
-          teachings of Jesus, we began to reach out and serve the poor in our
-          local communities, working first in local parks with supplies of food
-          and money to cover utility bills.
-          <br />
-          From these early outreach efforts, we moved to open a soup kitchen at
-          Our Lady of Fatima Church in San Bernardino. Soon, the Lutheran Church
-          of Our Savior added their hands and hearts; and then, Our Lady of
-          Guadalupe Church followed with a larger kitchen and dining facility at
-          their location. By 1990, Mary’s Table, as the soup kitchen had come to
-          be known, had expanded to five days a week and was serving over 5,000
-          hot meals each month. It had become a haven, a place of rest,
-          fellowship and renewal for many. In 1996, a free medical screening was
-          added to Mary’s Mercy Center, which had already expanded to include a
-          clothes closet, an emergency food bag program and other services.
-          <br />
-          Even before this, in 1989, fundraising had begun with the help of the
-          300 Club for a major expansion that would become Mary’s Mercy Center.
-          In 1992, we purchased our present building and became incorporated as
-          a non-profit public benefit corporation, organized exclusively for
-          charitable, religious and education purposes. In 1993, the Sisters of
-          Charity of the Incarnate Word provided a substantial grant for the
-          purchase of an old convent that would be transformed into Veronica’s
-          Home of Mercy. Veronica’s Home of Mercy was opened in 1995. Before
-          that Casa Merced (a HUD House) opened its doors in 1994. Then in 2009
-          Veronica’s Home II opened its doors.
-          <br />
-          Mary’s Mercy Center currently welcomes approximately 300 volunteers of
-          various faiths, schools, and community organizations from throughout
-          Southern California. We are proud to network with city agencies,
-          county agencies, and other non-profits to direct our clients to
-          additional resources. The goal is to restore dignity and purpose to
-          the homeless, the poor and the marginalized. Homelessness and poverty
-          are complicated issues and the solutions are as varied as the
-          individuals we serve. Together we are making a difference in the lives
-          of many.
-        </p>
       </div>
     </section>
 
@@ -809,11 +810,6 @@
         <p class="pullQuote">
           Make a difference<br />Become an active participant
         </p>
-        <img
-          class="float-left mr-3"
-          src="./img/volunteer.jpg"
-          alt="Volunteers unloading supplies"
-        />
         <p class="text-justify">
           Mary’s Mercy Center is very proud to be home to approximately 300
           volunteers of different faiths coming to us from Los Angeles,
@@ -838,9 +834,9 @@
         </div>
         <h3 class="display-4">How can I get on board?</h3>
         <div class="waysToHelp">
-          <p>Pray</p>
-          <p><a href="#donate">Donate</a></p>
-          <p>Volunteer</p>
+          <button>Pray</button>
+          <button><a href="#donate">Donate</a></button>
+          <button>Volunteer</button>
           <!-- this really needs some direction, should they call? email? -->
         </div>
         <p class="text-justify">

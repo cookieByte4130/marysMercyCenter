@@ -38,5 +38,16 @@ orgEl.addEventListener("change", (e) => {
       break;
   }
 
-  preview.style.backgroundImage = `url(img/${bgImg}.png)`;
+  preview.src = `img/${bgImg}.png`;
+});
+
+//Our Story toggle
+const ourStoryToggleEl = document.querySelector("#ourStoryToggle");
+
+ourStoryToggleEl.addEventListener("click", function (e) {
+  const ourStoryEl = document.querySelector("#ourStory");
+  ourStoryEl.classList.toggle("hidden");
+  ourStoryToggleEl.textContent = ourStoryEl.classList.contains("hidden")
+    ? "See More"
+    : "See Less";
 });
