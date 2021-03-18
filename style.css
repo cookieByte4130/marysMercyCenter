@@ -103,11 +103,12 @@ form {
   padding: 1rem;
   display: flex;
   justify-content: space-evenly;
+  flex-direction: row;
 }
 
 .donation,
 .donationPreview {
-  flex-direction: row;
+  width: 49%;
 }
 
 label {
@@ -118,25 +119,18 @@ label {
 input,
 select {
   color: var(--font-color);
-  border: 1px solid var(--primary-color);
+  border: 1px solid var(--secondary-color);
   border-radius: 5px;
   padding: 5px;
   display: block;
-  margin: 0 auto 1rem;
-  width: 200px;
-}
-
-input {
+  margin-bottom: 1rem;
+  width: 250px;
   text-align: center;
 }
 
 .donationPreview {
   height: 200px;
   border-radius: 5px;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  background-image: url("");
 }
 
 .deduction {
@@ -277,7 +271,7 @@ input {
   justify-content: space-evenly;
 }
 
-.waysToHelp button {
+.waysToHelp div {
   width: 250px;
   background-image: linear-gradient(-45deg, var(--secondary-color), #312002);
   color: white;
@@ -296,7 +290,7 @@ input {
  FUNDING
  ==================*/
 #funding ul {
-  list-style: circle;
+  list-style: none;
 }
 
 /*==================
@@ -309,15 +303,11 @@ input {
 /*==================
  WHYMMC 
  ==================*/
-#whyMMC p {
-  display: inline;
-}
-
 /*FACTS*/
 .stat-card {
   display: inline-block;
-  width: 315px;
-  height: 545px;
+  width: 250px;
+  height: 450px;
   color: white;
   perspective: 1000px;
   margin: 2rem auto;
@@ -357,7 +347,7 @@ input {
 
 .stat-num {
   display: block;
-  font-size: 4.5rem;
+  font-size: 3rem;
   text-align: center;
   margin: 1rem 0 0.5rem;
 }
@@ -365,11 +355,10 @@ input {
 .stat-text {
   text-align: center;
   margin-bottom: 1rem;
-  font-size: 1.75rem;
+  font-size: 1.5rem;
 }
 
 .stat-content {
-  font-size: 1.5rem;
   text-align: center;
 }
 
@@ -440,6 +429,10 @@ hr.light-100 {
 
   form {
     flex-direction: column-reverse;
+  }
+  .donation,
+  .donationPreview {
+    width: 100%;
   }
 }
 @media (max-width: 576px) {
